@@ -1,0 +1,131 @@
+<style>
+    #header{
+      background-color:rgb(222, 226, 230);
+  }
+  #button{
+margin-left: 875px;
+}
+</style>
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/c7d0174408.js" crossorigin="anonymous"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<div class="header"> 
+<a href="#" class="home">Home</a>
+<a href="" class="sbtn">Log in</a>
+</div>
+<style>
+    .header{
+background-color: lightgray;
+padding:10px 20px;
+display: block ;
+}
+.sbtn{
+    margin-left: 1150px;
+border-left: 2px solid black;
+border-right:2px solid black;
+text-decoration: none;
+padding: 5px 10px;
+text-decoration: none;
+text-decoration-color: none;
+color: black;
+transition: all 1s;
+}
+.sbtn:hover{
+letter-spacing: 4px;
+
+}
+.home{
+text-decoration: none;
+padding: 10px;
+color: black;
+}
+.home:hover{
+background-color:darkblue;
+color:white;
+transition: all 1s;
+}
+
+</style>
+</div>
+<body>
+    <div class="custom-container border border-5 rounded  mb-5 ">
+    <form action="sign up.php" method="post" class="was-validated">
+        <div class="text   mb-3 p-4"><h1>Sign up</h1>
+        <table>
+            <tr>
+                <td>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control"  name="firstname" pattern="[A-Za-z\s]+" title="enter valid name" placeholder="firstname" required>
+                        <label for="First-name" class="form-label"><span><i class="fa-sharp fa-solid fa-user" style="color: #005eff;"></i> </span> First-name</label>
+                    </div>
+                </td>
+                <td >
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" name="lastname"  pattern="[A-Za-z\s]+" title="enter valid name" placeholder="last name" required>
+                        <label for="lastname" >Last name</label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="form-floating mb-3 mt-3" >
+           <input type="date" class="form-control" name="dob"min="1961-12-31" max="2005-12-31"   title="people age below 60 an maximum 18"required>
+           <label for="" class=""><span><i class="fa-solid fa-calendar-days" style="color: #005eff;"></i> </span>date of birth</label>
+        </div>
+
+        <div class="form-floating mb-3 mt-3">
+        <input type="email" class="form-control" name="email"  placeholder="E-mail" required>
+        <label for="e-mail" class=""><span><i class="fa-sharp fa-solid fa-envelope" style="color: #005eff;"></i> </span>E-mail</label>
+        </div>
+
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" name="phno" placeholder="Ph-Number" pattern="[0-9]{10,}"  maxlength="10" title="please enter valid phone number"  required>
+            <label for="phno" class="form-label"><span><i class="fa-solid fa-phone" style="color: #0054e6;"></i> </span>Phone number</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="number" class="form-control" name="salary" placeholder="salary" required>
+            <label for="salary" class="form-label"><span><i class="fa-solid fa-wallet" style="color: #005eff;"></i> </span> Salary </label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" name="job_desg" pattern="[A-Za-z\s]+" title="only string is allowed" placeholder="job designation" required>
+            <label for="job_desg" class="form-label"><span><i class="fa-solid fa-briefcase" style="color: #005eff;"></i></span> job designation</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" name="username" placeholder="enter user name"  required>
+            <label for="text" class="form-label"><span><i class="fa-sharp fa-solid fa-user" style="color: #005eff;"></i></span>User name</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="password" class="form-control" name="pwd" type="text" placeholder="password"id="password" required><span toggle="#password" class="toggle-password field-icon"></span>
+            <label for="password" class="form-label"><span><i class="fa-solid fa-key " style="color: #005eff;"></i> </span>Create password</label>
+        </div>
+      
+
+        <input type="submit" id="btn" class="btn btn-outline-primary "> 
+    </div>
+    </form>
+</div>
+</body>
+</html>
+<style>
+    .custom-container {
+      max-width: 600px; /* Adjust the width as needed */
+      max-height: 780px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    } 
+    #header{
+        background-color:rgb(222, 226, 230);
+    }
+    .btn {
+ margin-left: 0px;
+}
+
+ 
